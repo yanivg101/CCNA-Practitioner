@@ -1,0 +1,6 @@
+{
+  "name": "CCNA Pro - הכנה למבחן 200-301",
+  "description": "אפליקציית הכנה מתקדמת, אינטראקטיבית וגיימיפייד למבחן CCNA 200-301 בעברית. כוללת מחולל מבחנים, כרטיסיות זיכרון, כלי חישוב סאבנט וניתוח אזורים חלשים.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

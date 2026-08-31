@@ -1,0 +1,78 @@
+[
+  {
+    "id": "osi-model",
+    "term": "OSI 7-Layer Model",
+    "acronym": "OSI",
+    "hebrewTranslation": "מודל שבע השכבות של OSI",
+    "domain": "network_fundamentals",
+    "category": "fundamentals",
+    "definition": "מודל תיאורטי בן 7 שכבות שפותח ע\"י ארגון ISO להבנת תהליך העברת נתונים ברשת: Physical (1), Data Link (2), Network (3), Transport (4), Session (5), Presentation (6), Application (7).",
+    "examNote": "זכור את המשפט בעברית לשכבות (מלמעלה למטה): 'כל נציג שירות יבדוק נתוני פקס'. יש לדעת בדיוק איזו יחידת מידע (PDU) וציוד פועלים בכל שכבה.",
+    "technicalDetails": {
+      "layer": "Layers 1-7",
+      "rfcOrStandard": "ISO/IEC 7498-1"
+    },
+    "relatedTerms": ["TCP/IP Model", "PDU", "Encapsulation"]
+  },
+  {
+    "id": "tcp-ip-model",
+    "term": "TCP/IP Protocol Suite",
+    "acronym": "TCP/IP",
+    "hebrewTranslation": "מודל פרוטוקולי TCP/IP",
+    "domain": "network_fundamentals",
+    "category": "fundamentals",
+    "definition": "מודל מעשי בן 4 שכבות שעליו מבוססת רשת האינטרנט המודרנית: Network Access (שכבות 1-2 של OSI), Internet (שכבה 3), Transport (שכבה 4), ו-Application (שכבות 5-7).",
+    "examNote": "בבחינת CCNA 200-301 מושווים לעיתים קרובות מודל ה-4 שכבות של TCP/IP והגרסה המעודכנת בת 5 השכבות אל מול מודל 7 השכבות של OSI.",
+    "technicalDetails": {
+      "rfcOrStandard": "RFC 1122"
+    },
+    "relatedTerms": ["OSI 7-Layer Model", "Encapsulation", "TCP", "UDP"]
+  },
+  {
+    "id": "encapsulation",
+    "term": "Encapsulation & Decapsulation",
+    "acronym": "PDU",
+    "hebrewTranslation": "כימוס ופירוק נתונים",
+    "domain": "network_fundamentals",
+    "category": "fundamentals",
+    "definition": "תהליך עטיפת הנתונים בכותרות (Headers) וסיומות (Trailers) בכל שכבה בירידה במודל ה-OSI: Data (שכבות 5-7) -> Segment (שכבה 4) -> Packet (שכבה 3) -> Frame (שכבה 2) -> Bits (שכבה 1).",
+    "examNote": "שכבה 2 (Data Link) היא השכבה היחידה שמוסיפה גם Header (כותרת עם MAC) וגם Trailer (סיומת FCS לבדיקת תקינות ושגיאות).",
+    "technicalDetails": {
+      "layer": "Layers 1-4",
+      "rfcOrStandard": "IEEE 802.3 / IETF"
+    },
+    "relatedTerms": ["PDU", "FCS", "MAC Address", "IPv4 Header"]
+  },
+  {
+    "id": "tcp",
+    "term": "Transmission Control Protocol (TCP)",
+    "acronym": "TCP",
+    "hebrewTranslation": "פרוטוקול בקרת שידור אמין",
+    "domain": "network_fundamentals",
+    "category": "fundamentals",
+    "definition": "פרוטוקול שכבת התעבורה (Layer 4) אמין ומוכוון חיבור (Connection-Oriented), המבצע לחיצת יד משולשת (SYN, SYN-ACK, ACK), בקרת זרימה (Windowing), ואישור קבלה על כל מקטע.",
+    "examNote": "גודל כותרת TCP מינימלי הוא 20 בתים. כותרת TCP כוללת Sequence Number, Acknowledgment Number, Window Size ודגלים (SYN, ACK, FIN, RST, PSH, URG).",
+    "technicalDetails": {
+      "layer": "Layer 4 (Transport)",
+      "protocolNumber": 6,
+      "rfcOrStandard": "RFC 793 / RFC 9293"
+    },
+    "relatedTerms": ["UDP", "Three-Way Handshake", "Port Numbers"]
+  },
+  {
+    "id": "udp",
+    "term": "User Datagram Protocol (UDP)",
+    "acronym": "UDP",
+    "hebrewTranslation": "פרוטוקול חבילות משתמש מהיר",
+    "domain": "network_fundamentals",
+    "category": "fundamentals",
+    "definition": "פרוטוקול שכבה 4 פשוט, מהיר ונטול חיבור (Connectionless) מסוג Best-Effort, שאינו מבטיח הגעה, סדר או בקרת זרימה. אידיאלי לשידורי זמן-אמת (VoIP, Video, DNS, DHCP).",
+    "examNote": "כותרת UDP קבועה וקצרה מאוד - 8 בתים בלבד (מכילה רק Source Port, Destination Port, Length ו-Checksum).",
+    "technicalDetails": {
+      "layer": "Layer 4 (Transport)",
+      "protocolNumber": 17,
+      "rfcOrStandard": "RFC 768"
+    },
+    "relatedTerms": ["TCP", "Voice over IP (VoIP)", "DNS", "DHCP"]
+  }
+]
