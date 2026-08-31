@@ -2158,7 +2158,7 @@ export const additionalCCNAQuestions: CCNAQuestion[] = [
     references: 'Cisco CCNA Cert Guide Vol 1, Chapter 20'
   },
   {
-    id: 'na_extra_12',
+    id: 'na_extra_20',
     domain: 'network_access',
     subtopic: 'פורט-צ׳אנל ו-LACP',
     question: 'איזה שילוב של מצבי תצורה (Modes) יגרום למנגנון EtherChannel מבוסס LACP (IEEE 802.3ad) ליצור חיבור פעיל ותקין בין שני מתגים שונים?',
